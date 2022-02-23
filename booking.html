@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BrassJoy Cafe銅樂咖啡，早午餐、下午茶、義大利麵、現打果汁，歡迎線上訂位">
+    <title>BrassJoy Cafe - 線上訂位</title>
+    <link rel="stylesheet" href="myStyle.css"> 
+    <style>
+        .content_title{
+            background-image: url(images/doodles.png);
+        }
+        #num{
+            width: 35px;
+        }        
+        td{
+            padding: 5px;
+        }
+    </style>
+</head>
+    <div id="background"></div>
+    <div id="top">
+        <img id="logo" src="images/logo.png">
+        <div style="padding-left: 150px;">
+            <h1 id="title">BRASS JOY CAFE 銅樂咖啡</h1>
+            <h1 id="subtitle">線上訂位</h1>
+        </div>      
+    </div>
+    <div id="column">
+        <a class="selection" href="index.html">HOME</a>
+        <a class="selection" href="aboutus.html">ABOUT US</a>
+        <a class="selection" href="photos.html">PHOTOS</a>
+        <a class="selection" href="menu.html">MENU</a>
+        <a class="selection" href="links.html">LINKS</a>
+        <a id="thispage" class="selection" href="booking.html">BOOKING</a>
+    </div>          
+    <div id="content">               
+        <div class="content_title">訂位資訊填寫</div>               
+        <form>            
+            <table class="content_block">
+                <tr>
+                    <td class="content_text">姓名</td>
+                    <td colspan="2">
+                        <input type="text" style="width: 80px;">
+                        <input type="radio" name="gender" id="1">先生
+                        <input type="radio" name="gender" id="2">小姐
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content_text">人數</td>
+                    <td width="80px"><input type="number" name="adult" min="1" max="30" id="num">大人</td>
+                    <td><input type="number" name="child" min="0" max="30" id="num">小孩</td>
+                </tr>                
+                <tr>
+                    <td class="content_text">日期</td>
+                    <td colspan="2"><input type="date" name="time"></td>
+                </tr>
+                <tr>
+                    <td class="content_text">時間</td>
+                    <td>
+                        <select name="hour">
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>時
+                    </td>
+                    <td>
+                        <select name="minute">
+                            <option value="00">00</option>
+                            <option value="30">30</option>
+                        </select>分
+                    </td>
+                </tr>
+                <tr>
+                    <td class="content_text">連絡電話</td>
+                    <td colspan="2"><input type="phone"></td>
+                </tr>
+                <tr>
+                    <td class="content_text">特殊備註</td>
+                    <td colspan="2"><textarea name="ps" rows="3"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="確定訂位"></td>
+                    <td><input type="reset" value="取消重填"></td>
+                </tr>
+            </table>
+        </form>
+        <div class="content_title">**訂位須知**</div>  
+        <div class="content_block">
+            <p class="content_text">請於欲訂位日期之12小時前訂位</p>
+            <p class="content_text">訂位保留10分鐘，逾時不候</p>
+            <p class="content_text">欲取消訂位請於當日2小時前取消</p>
+            <p class="content_text">當訂位人數超過20人，請先電連點餐，並收取30%訂單費用作為押金</p>
+            <p class="content_text"></p>
+        </div>
+        <div class="content_title">**用餐須知**</div>  
+        <div class="content_block">
+            <p class="content_text">內用每人最低消費一杯飲料或一份餐點</p>
+            <p class="content_text">本店採自助式，不加收服務費</p>
+            <p class="content_text">禁止攜帶外食、打牌、睡覺，若遇客滿時，本店用餐時間為90分鐘</p>
+            <p class="content_text">餐點全天供應，均現點現做，請耐心等候</p>
+        </div>
+    </div>
+</body>
+</html>
